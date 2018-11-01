@@ -5,10 +5,12 @@ import java.util.Iterator;
 import java.util.ListIterator;
 
 /**
- * iterator remove()
- * �Ƴ�Ԫ��
- * @author Administrator
- *
+ * 
+* @ClassName: RemoveDemo  
+* @Description: 使用iterator和 listIterator操作集合元素
+* @author wangzedong  
+* @date 2018年11月2日上午7:26:41  
+*
  */
 public class RemoveDemo {
 

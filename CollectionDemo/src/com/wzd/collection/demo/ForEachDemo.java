@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Collection ForEach()
- * foreach±éÀú¼¯ºÏ
- * @author Administrator
- *
+ * 
+* @ClassName: ForEachDemo  
+* @Description: Foreachéå†Collection
+* @author wangzedong  
+* @date 2018å¹´11æœˆ2æ—¥ä¸Šåˆ7:25:51  
+*
  */
 public class ForEachDemo {
 	public static void main(String[] args) {

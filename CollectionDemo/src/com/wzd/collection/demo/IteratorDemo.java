@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Collection iterator()
- * iterator±éÀú¼¯ºÏ
- * @author Administrator
- *
+ * 
+* @ClassName: IteratorDemo  
+* @Description: iteratoréå†Collection 
+* @author wangzedong  
+* @date 2018å¹´11æœˆ2æ—¥ä¸Šåˆ7:26:26  
+*
  */
 public class IteratorDemo {
 

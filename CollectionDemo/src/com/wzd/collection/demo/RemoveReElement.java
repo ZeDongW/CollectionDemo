@@ -3,6 +3,14 @@ package com.wzd.collection.demo;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
+/**
+ * 
+* @ClassName: RemoveReElement  
+* @Description: 去除集合重复元素 
+* @author wangzedong  
+* @date 2018年11月2日上午7:27:57  
+*
+ */
 public class RemoveReElement {
 
 	public static void main(String[] args) {

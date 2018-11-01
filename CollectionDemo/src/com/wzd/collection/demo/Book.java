@@ -1,8 +1,16 @@
-package com.wzd.collection.demo;
 
+package com.wzd.collection.demo;
+/**
+ * 
+* @ClassName: Book  
+* @Description: ä¹¦æœ¬ç±»
+* @author wangzedong  
+* @date 2018å¹´11æœˆ2æ—¥ä¸Šåˆ7:24:11  
+*
+ */
 public class Book {
-	private int id;//±àºÅ
-	private String name;//ÊéÃû
+	private int id;//ç¼–å·
+	private String name;//ä¹¦å
 
 	public Book() {
 		super();

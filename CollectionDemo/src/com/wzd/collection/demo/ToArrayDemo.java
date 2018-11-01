@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Collection toArray()
- * ¼¯ºÏ×ªÊı×é±éÀú¼¯ºÏ
- * @author Administrator
- *
+ * 
+* @ClassName: ToArrayDemo  
+* @Description: å°†Collectionè½¬æ¢ä¸ºæ•°ç»„  
+* @author wangzedong  
+* @date 2018å¹´11æœˆ2æ—¥ä¸Šåˆ7:28:38  
+*
  */
 public class ToArrayDemo {
 	public static void main(String[] args) {

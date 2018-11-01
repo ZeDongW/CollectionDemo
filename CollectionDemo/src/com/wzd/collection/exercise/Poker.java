@@ -48,6 +48,6 @@ public class Poker {
 
     @Override
     public String toString() {
-        return "[colors + numbers]";
+        return "[" + colors + numbers + "]";
     }
 }

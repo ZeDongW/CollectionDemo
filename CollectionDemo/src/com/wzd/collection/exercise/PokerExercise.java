@@ -9,6 +9,7 @@
 package com.wzd.collection.exercise;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 /**
  * @ClassName: PokerExercise
@@ -22,7 +23,7 @@ public class PokerExercise {
     /**
      * 
      * @Title: initPokers @Description: 初始化扑克牌 @param @param list @param @return
-     * 参数 @return LinkedList 返回类型 @throws
+     *         参数 @return LinkedList 返回类型 @throws
      */
     public LinkedList initPokers() {
         LinkedList<Poker> list = new LinkedList<Poker>();
@@ -36,21 +37,41 @@ public class PokerExercise {
         }
         return list;
     }
-    
+
     /**
      * 
-    * @Title: printPokers  
-    * @Description: 打印扑克牌，每10张换行 
-    * @param @param pokers    参数  
-    * @return void    返回类型  
-    * @throws
+     * @Title: printPokers @Description: 打印扑克牌，每10张换行 @param @param pokers
+     * 参数 @return void 返回类型 @throws
      */
-    public void printPokers(LinkedList<Poker> pokers){
+    public void printPokers(LinkedList<Poker> pokers) {
         for (int i = 0; i < pokers.size(); i++) {
             System.out.print(pokers.get(i) + ",");
-            if(i%10==9) {
+            if (i % 10 == 9) {
                 System.out.println();
             }
+        }
+    }
+
+    /**
+     * 
+     * @Title: shufflePokers @Description: 利用随机数洗牌(打乱扑克牌顺序) @param @param pokers
+     * 参数 @return void 返回类型 @throws
+     */
+    public void shufflePokers(LinkedList<Poker> pokers) {
+        // 创建随机类
+        Random random = new Random();
+        for (int i = 0; i < 100; i++) {// 随机交换100次扑克牌位置
+            // 随机获取一个扑克牌索引
+            int index1 = random.nextInt(pokers.size());
+            int index2 = random.nextInt(pokers.size());
+
+            // 根据索引获取扑克牌位置
+            Poker poker1 = pokers.get(index1);
+            Poker poker2 = pokers.get(index2);
+
+            // 交换两张扑克牌位置
+            pokers.set(index1, poker2);
+            pokers.set(index2, poker1);
         }
     }
 }
