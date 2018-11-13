@@ -21,8 +21,10 @@
 						接口，重写CompareTo（）方法，把元素的比较规则定义在该方法上。
 						3.如果比较元素的时候 	，CompareTo方法返回的是0，那么该元素就被视为重复元素，不允许添加。（注意：TreeSet与HashCode，equals方法没有任何关系。）
 						4.往TreeSet添加元素的时候，如果元素本身不具备自然顺序的特性，而元素所属的类也没有实现Comparable接口，那么必须要在创建TreeSet的时候传入一个比较器。
-							如何自定义比较器：自定义一个类实现Comparetor接口即可，把元素与元素之间的比较规则定义在compare方法上即可。
+							如何自定义比较器：自定义一个类实现Comparator接口即可，把元素与元素之间的比较规则定义在compare方法上即可。
+						5.往TreeSet添加元素的时候，如果元素本身不具备自然顺序的特性，而元素所属的类已经实现了Comparable接口，在传入TreeSet对象的时候也传入了比较器，
+							那么是以比较器的比较规则优先使用。
 								自定义比较器格式：
-									Class 类名 implements Comparetor{
+									Class 类名 implements Comparator{
 									
 									}
