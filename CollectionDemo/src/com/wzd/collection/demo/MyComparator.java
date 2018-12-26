@@ -17,7 +17,7 @@ import java.util.Comparator;
 * @date 2018年11月14日上午6:49:40  
 *    
 */
-public class MyComparator implements Comparator{
+public class MyComparator implements Comparator<Emp2>{
 
     /**
     * <p>Title: compare</p>  
@@ -28,10 +28,8 @@ public class MyComparator implements Comparator{
     * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)  
     */  
     @Override
-    public int compare(Object o1, Object o2) {
-        Emp2 e1 = (Emp2)o1; 
-        Emp2 e2 = (Emp2)o2; 
-        return e1.getId() - e2.getId();
+    public int compare(Emp2 o1, Emp2 o2) {
+        return o1.getId() - o2.getId();
     }
 
 }
