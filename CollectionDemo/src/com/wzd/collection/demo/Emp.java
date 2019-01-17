@@ -15,7 +15,7 @@ package com.wzd.collection.demo;
  * @date 2018年11月13日上午7:10:46
  * 
  */
-public class Emp implements Comparable<Emp> {
+public class Emp implements Comparable<Emp>{
     private int id;
     private String name;
     private int salary;
@@ -61,19 +61,14 @@ public class Emp implements Comparable<Emp> {
     }
 
     /**
-     * <p>
-     * Title: compareTo
-     * </p>
-     * <p>
-     * Description:
-     * </p>
-     * 
-     * @param o
-     * @return
-     * @see java.lang.Comparable#compareTo(java.lang.Object)
-     */
-    @Override
+    * <p>Title: compareTo</p>  
+    * <p>Description: </p>  
+    * @param o
+    * @return  
+    * @see java.lang.Comparable#compareTo(java.lang.Object)  
+    */  
     public int compareTo(Emp o) {
-        return this.salary - o.salary;
+        return this.salary-o.salary;
     }
+
 }

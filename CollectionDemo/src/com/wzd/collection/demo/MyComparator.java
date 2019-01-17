@@ -27,9 +27,9 @@ public class MyComparator implements Comparator<Emp2>{
     * @return  
     * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)  
     */  
-    @Override
     public int compare(Emp2 o1, Emp2 o2) {
-        return o1.getId() - o2.getId();
+        return o1.getSalary()-o2.getSalary();
     }
+
 
 }
