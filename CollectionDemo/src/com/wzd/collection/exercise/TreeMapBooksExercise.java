@@ -38,6 +38,7 @@ public class TreeMapBooksExercise {
         TreeMap<Books, Date> map = new TreeMap<Books, Date>(comp); // 创建一个TreeMap用于存储书，并传入自定义比较器
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Scanner sc = new Scanner(System.in);
+        Books book = new Books();
         while (true) {
             System.out.println("***********************************************************");
             System.out.println("**********Please select the corresponding function*********");
@@ -49,13 +50,13 @@ public class TreeMapBooksExercise {
             String operate = sc.next().toUpperCase(); // 获取用户选择的操作符，并统一转换为大写
             if (ADD_BOOK.equals(operate)) { // 进入添加书本功能
                 System.out.println("You have selected the add books function...");
-                addBook(map, sc, sdf);
+                addBook(map, sc, sdf, book);
             } else if (SHOW_BOOKS.equals(operate)) { // 进入展示书本功能
                 System.out.println("You have selected the display book function...");
                 showBooks(map);
             } else if (DELETE_BOOK.equals(operate)) { // 进入删除书本功能
                 System.out.println("You have selected the delete book function...");
-                deleteBook(map, sc, sdf);
+                deleteBook(map, sc, sdf, book);
             } else if (EXIT.equals(operate)) { // 退出功能菜单
                 System.out.println("Exit menu successful!!!");
                 System.exit(0);// 退出
@@ -73,8 +74,7 @@ public class TreeMapBooksExercise {
      * @return void 返回类型 
      * @throws
      */
-    private static void deleteBook(TreeMap<Books, Date> map, Scanner sc, SimpleDateFormat sdf) {
-        Books book = new Books();
+    private static void deleteBook(TreeMap<Books, Date> map, Scanner sc, SimpleDateFormat sdf, Books book) {
         book = enterBook(sc, sdf);
         if(!map.containsKey(book)) {
             System.out.println("The book information you entered does not exist and cannot be deleted");
@@ -108,8 +108,7 @@ public class TreeMapBooksExercise {
      * @return void 返回类型
      * @throws
      */
-    private static void addBook(TreeMap<Books, Date> map, Scanner sc, SimpleDateFormat sdf) {
-        Books book = new Books();
+    private static void addBook(TreeMap<Books, Date> map, Scanner sc, SimpleDateFormat sdf, Books book) {
         book = enterBook(sc, sdf);
         if(map.containsKey(book)) {
             while (true) {
